@@ -1,0 +1,20 @@
+# this is the configuration file your users will have to write
+language: typescript
+app: ts-node main.ts
+
+# the interesting part is this, where they define to use your
+# plugin as the validation.
+validations:
+
+    # the npm package name (required)
+  - package: cdk8s-validation-plugin-example
+
+    # the class the implements the plugin (required)
+    class: ExampleValidation
+
+    # the version of the plugin to use (required)
+    version: 0.0.0
+
+    # the properties to pass to the plugin (depends on the plugin, in our case - optional)
+    properties:
+      messagePrefix: something
