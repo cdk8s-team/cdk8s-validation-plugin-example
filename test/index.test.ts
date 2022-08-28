@@ -21,8 +21,8 @@ test('message prefix is added to violations', async () => {
     const manifestPath = path.join(dir, 'manifest.yaml');
     fs.writeFileSync(manifestPath, yaml.stringify(manifest));
 
-    // when used with cdk8s, cdk8s will instatiate both the plugin and the context for it.
-    // in our unit tests, we need to do it.
+    // when used with cdk8s, cdk8s will instantiate both the plugin and
+    // the context for it. in our unit tests, we need to do it.
     const validation = new ExampleValidation({ messagePrefix: 'custom-prefix' });
     const context = new ValidationContext([manifestPath], 'cdk8s-validation-plugin-example', '0.0.0');
 

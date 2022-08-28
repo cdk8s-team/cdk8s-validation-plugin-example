@@ -40,11 +40,15 @@ export class ExampleValidation implements Validation {
       const resources = Array.isArray(parsed) ? parsed : [parsed];
       for (const resource of resources) {
         if (resource.kind === 'Deployment' && resource.spec.template.spec.restartPolicy !== 'Always') {
+
+          // this is how we build the report, incrementally
+          // adding violations to it.
           context.report.addViolation({
             resourceName: resource.metadata.name,
             message: `${this.props.messagePrefix ?? ''}Deployments should set the restartPolicy to 'Always'`,
             manifestPath: manifest,
           });
+
           // in our case every violation causes a validation failure
           // but that doesn't have to be the case - its up to the plugin
           // to determine if a validation is successful or not.
