@@ -19,6 +19,7 @@ const project = new typescript.TypeScriptProject({
     // used in integration tests to author a cdk8s application.
     'cdk8s',
     'cdk8s-plus-24',
+    'constructs',
     'ts-node',
 
     // just utility stuff for tests
