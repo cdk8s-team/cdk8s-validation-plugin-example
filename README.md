@@ -79,6 +79,7 @@ For JavaScript projects, this is trivial, but for TypeScript projects, it means 
 This of course poses a problem because we don't want to publish our code before testing it.
 
 > <sup>*</sup> This does not have to be the case if your unit tests are already running after compilation.
+>
 > <sup>**</sup> One could reference the plugin as a relative local path, but it complicates the dynamic loading and doesn't emulate
 the same conditions your users will encounter.
 
