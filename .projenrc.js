@@ -7,7 +7,7 @@ const project = new typescript.TypeScriptProject({
   description: 'This is an example project for implementing cdk8s validation plugins',
   authorName: 'Amazon Web Services',
   authorUrl: 'https://aws.amazon.com',
-  minNodeVersion: '14.17.0',
+  minNodeVersion: '14.18.0',
 
   devDeps: [
 

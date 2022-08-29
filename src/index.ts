@@ -35,7 +35,11 @@ export class ExampleValidation implements Validation {
     let status: 'success' | 'failure' = 'success';
 
     for (const manifest of context.manifests) {
-      console.log(`validating manifest: ${manifest}`);
+
+      // use the dedicated logger to log messages instead of `console.log`. this allows
+      // the cdk8s framework to have control on user output.
+      context.logger.log(`validating manifest: ${manifest}`);
+
       const parsed = yaml.parse(fs.readFileSync(manifest, { encoding: 'utf-8' }));
       const resources = Array.isArray(parsed) ? parsed : [parsed];
       for (const resource of resources) {
