@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 
 // make sure to use "import type", as these are not needed at runtime
-import type { Validation, ValidationContext } from 'cdk8s-cli';
+import type { Validation, ValidationContext } from 'cdk8s-cli/plugins';
 
 import * as yaml from 'yaml';
 

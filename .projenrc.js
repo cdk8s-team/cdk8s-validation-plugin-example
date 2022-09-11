@@ -34,6 +34,10 @@ const project = new typescript.TypeScriptProject({
   ],
 });
 
+// the cdk8s-cli uses
+project.tsconfig.compilerOptions.moduleResolution = 'nodenext';
+project.tsconfigDev.compilerOptions.moduleResolution = 'nodenext';
+
 project.gitignore.exclude('.vscode/');
 
 // we add a task to run the integration tests. they cannot be executed
