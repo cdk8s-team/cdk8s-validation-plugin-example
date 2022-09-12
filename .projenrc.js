@@ -34,7 +34,11 @@ const project = new typescript.TypeScriptProject({
   ],
 });
 
-// the cdk8s-cli uses
+// the cdk8s-cli uses the "exports" directive in package.json
+// to restrict the modules that can be imported from it.
+// we need to add this config so that typescript detects it.
+// see https://www.typescriptlang.org/docs/handbook/esm-node.html
+// see https://www.typescriptlang.org/docs/handbook/esm-node.html#packagejson-exports-imports-and-self-referencing
 project.tsconfig.compilerOptions.moduleResolution = 'nodenext';
 project.tsconfigDev.compilerOptions.moduleResolution = 'nodenext';
 
