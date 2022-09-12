@@ -46,7 +46,7 @@ async function synth(fixture: string) {
 
       // our project already declares these dependencies, so lets just
       // take them instead of installing new ones.
-      const cdk8s = require.resolve('cdk8s-cli/bin/cdk8s');
+      const cdk8s = path.resolve(path.join(__dirname, '..', 'node_modules/.bin/cdk8s'));
       const kplus = path.join(require.resolve('cdk8s-plus-24'), '..', '..');
       const k = path.join(require.resolve('cdk8s'), '..', '..');
 

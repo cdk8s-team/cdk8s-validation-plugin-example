@@ -33,13 +33,40 @@ When running `cdk8s synth`, if some parts of the application violate the policy 
 report will be printed, and the command will fail.
 
 ```console
-╔═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
-║                                failure | Validation Report | cdk8s-validation-plugin-example (v0.0.0)                                       ║
-╟───────────────────────────┬───────────────────────────────────────────────────────────────┬──────────────────────────────┬──────────────────╢
-║ Resource                  │ Message                                                       │ Manifest                     │ Construct        ║
-╟───────────────────────────┼───────────────────────────────────────────────────────────────┼──────────────────────────────┼──────────────────╢
-║ chart-deployment-c8a3b439 │ Deployments should set the restartPolicy to 'Always'          │ dist/chart-c86185a7.k8s.yaml │ Chart/Deployment ║
-╚═══════════════════════════╧═══════════════════════════════════════════════════════════════╧══════════════════════════════╧══════════════════╝
+Validation Report (cdk8s-validation-plugin-example@0.0.0)
+---------------------------------------------------------
+
+(Summary)
+
+╔═════════╤═════════════════════════════════╗
+║ Status  │ failure                         ║
+╟─────────┼─────────────────────────────────╢
+║ Plugin  │ cdk8s-validation-plugin-example ║
+╟─────────┼─────────────────────────────────╢
+║ Version │ 0.0.0                           ║
+╚═════════╧═════════════════════════════════╝
+
+
+(Violations)
+
+Ensure deployment-like resource is using a valid restart policy (2 occurrences)
+
+  Occurrences:
+
+    - construct.path: N/A
+    - manifest.path: dist/chart-c86185a7.k8s.yaml
+    - resource.name: chart-deployment1-c874f36f
+    - locations:
+      > spec.template.spec.restartPolicy
+
+    - construct.path: N/A
+    - manifest.path: dist/chart-c86185a7.k8s.yaml
+    - resource.name: chart-deployment2-c884ba93
+    - locations:
+      > spec.template.spec.restartPolicy
+
+  Recommendation: Incorrect value for key `restartPolicy` - any other value than `Always` is not supported by this resource
+  How to fix: https://hub.datree.io/built-in-rules/ensure-valid-restart-policy
 ```
 
 ## Creating the Project

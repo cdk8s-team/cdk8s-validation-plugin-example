@@ -7,7 +7,7 @@ import * as yaml from 'yaml';
 import { ExampleValidation } from '../src';
 import { withTempDir } from './utils';
 
-test('message prefix is added to violations', async () => {
+test('specific kinds can be ignored', async () => {
 
   await withTempDir(async (dir: string) => {
 
@@ -23,7 +23,7 @@ test('message prefix is added to violations', async () => {
 
     // when used with cdk8s, cdk8s will instantiate both the plugin and
     // the context for it. in our unit tests, we need to do it.
-    const validation = new ExampleValidation({ messagePrefix: 'custom-prefix' });
+    const validation = new ExampleValidation({ ignoreKinds: ['Deployment'] });
     const context = new ValidationContext([manifestPath], 'cdk8s-validation-plugin-example', '0.0.0');
 
     // run the validation
@@ -31,12 +31,7 @@ test('message prefix is added to violations', async () => {
 
     const report = context.report.toJson();
 
-    expect(report.violations.length).toBeGreaterThan(0);
-
-    for (const violation of report.violations) {
-    // make sure the prefix exists for every violation message
-      expect(violation.message.startsWith('custom-prefix')).toBeTruthy();
-    }
+    expect(report.violations.length).toEqual(0);
 
   });
 
