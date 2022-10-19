@@ -32,6 +32,13 @@ const project = new typescript.TypeScriptProject({
     // you can use any dependency you like.
     'yaml',
   ],
+
+  autoApproveOptions: {
+    allowedUsernames: ['cdk8s-automation'],
+    secret: 'GITHUB_TOKEN',
+  },
+  autoApproveUpgrades: true,
+
 });
 
 // the cdk8s-cli uses the "exports" directive in package.json
