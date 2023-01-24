@@ -29,6 +29,20 @@ validations:
     version: 0.0.5
 ```
 
+Instead, if the user has a local repository with the validations to test locally, they can validate the manifests synthesized by cdk8s via the plugins but, in the configuration file (`cdk8s.yaml`) for the `package` value within the  `validations` property we define the path to the 
+local repository holding the validations.
+
+For example, given the following `cdk8s.yaml` configuration file:
+
+```yaml
+language: typescript
+app: ts-node main.ts
+validations:
+  - package: ~/<local-path>
+    class: ExampleValidation
+    version: 0.0.5
+```
+
 When running `cdk8s synth`, if some parts of the application violate the policy this plugin enforces, a
 report will be printed, and the command will fail.
 
@@ -43,7 +57,7 @@ Validation Report (cdk8s-validation-plugin-example@0.0.0)
 ╟─────────┼─────────────────────────────────╢
 ║ Plugin  │ cdk8s-validation-plugin-example ║
 ╟─────────┼─────────────────────────────────╢
-║ Version │ 0.0.0                           ║
+║ Version │ 0.0.5                           ║
 ╚═════════╧═════════════════════════════════╝
 
 
