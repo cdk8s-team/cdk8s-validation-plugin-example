@@ -29,10 +29,7 @@ validations:
     version: 0.0.5
 ```
 
-Instead, if the user has a local repository with the validations to test locally, they can validate the manifests synthesized by cdk8s via the plugins but, in the configuration file (`cdk8s.yaml`) for the `package` key within the  `validations` property we define the path to the 
-local repository holding the validations.
-
-For example, given the following `cdk8s.yaml` configuration file:
+If the package the user wants to validate has not been published to npm and instead only exists locally, they can specify the file path in the `package` key under `validations`:
 
 ```yaml
 language: typescript
