@@ -29,6 +29,17 @@ validations:
     version: 0.0.5
 ```
 
+If the package the user wants to validate has not been published to npm and instead only exists locally, they can specify the file path in the `package` key under `validations`:
+
+```yaml
+language: typescript
+app: ts-node main.ts
+validations:
+  - package: ~/<local-path>
+    class: ExampleValidation
+    version: 0.0.5
+```
+
 When running `cdk8s synth`, if some parts of the application violate the policy this plugin enforces, a
 report will be printed, and the command will fail.
 
@@ -43,7 +54,7 @@ Validation Report (cdk8s-validation-plugin-example@0.0.0)
 ╟─────────┼─────────────────────────────────╢
 ║ Plugin  │ cdk8s-validation-plugin-example ║
 ╟─────────┼─────────────────────────────────╢
-║ Version │ 0.0.0                           ║
+║ Version │ 0.0.5                           ║
 ╚═════════╧═════════════════════════════════╝
 
 
