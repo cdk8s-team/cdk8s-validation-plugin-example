@@ -1,13 +1,10 @@
-const { typescript } = require('projen');
-const project = new typescript.TypeScriptProject({
+const { Cdk8sTeamTypescriptProject } = require('@cdk8s/projen-common');
+
+const project = new Cdk8sTeamTypescriptProject({
   defaultReleaseBranch: 'main',
   name: 'cdk8s-validation-plugin-example',
 
-  repositoryUrl: 'https://github.com/cdk8s-team/cdk8s-validation-plugin-example.git',
   description: 'This is an example project for implementing cdk8s validation plugins',
-  authorName: 'Amazon Web Services',
-  authorUrl: 'https://aws.amazon.com',
-  minNodeVersion: '14.18.0',
 
   devDeps: [
 
@@ -25,6 +22,9 @@ const project = new typescript.TypeScriptProject({
     // just utility stuff for tests
     'fs-extra',
     '@types/fs-extra',
+
+    // projen utilities
+    '@cdk8s/projen-common',
   ],
 
   deps: [
@@ -32,12 +32,6 @@ const project = new typescript.TypeScriptProject({
     // you can use any dependency you like.
     'yaml',
   ],
-
-  autoApproveOptions: {
-    allowedUsernames: ['cdk8s-automation'],
-    secret: 'GITHUB_TOKEN',
-  },
-  autoApproveUpgrades: true,
 
 });
 
