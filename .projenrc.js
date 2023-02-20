@@ -1,8 +1,9 @@
-const { Cdk8sTeamTypescriptProject } = require('@cdk8s/projen-common');
+const { Cdk8sTeamTypeScriptProject } = require('@cdk8s/projen-common');
 
-const project = new Cdk8sTeamTypescriptProject({
+const project = new Cdk8sTeamTypeScriptProject({
   defaultReleaseBranch: 'main',
   name: 'cdk8s-validation-plugin-example',
+  minNodeVersion: '14.18.0',
 
   description: 'This is an example project for implementing cdk8s validation plugins',
 
