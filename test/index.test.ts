@@ -4,8 +4,8 @@ import { ValidationContext } from 'cdk8s-cli/plugins';
 import * as kplus from 'cdk8s-plus-24';
 import * as fs from 'fs-extra';
 import * as yaml from 'yaml';
-import { ExampleValidation } from '../src';
 import { withTempDir } from './utils';
+import { ExampleValidation } from '../src';
 
 test('specific kinds can be ignored', async () => {
 
