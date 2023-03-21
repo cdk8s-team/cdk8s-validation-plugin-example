@@ -59,4 +59,5 @@ junit.xml
 !/.github/ISSUE_TEMPLATE/feature-request.md
 !/SECURITY.md
 !/.github/workflows/triage.yml
+!/.github/workflows/dependabot-security-alerts.yml
 .vscode/
