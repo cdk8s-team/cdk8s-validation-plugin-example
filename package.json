@@ -40,8 +40,8 @@
     "@typescript-eslint/parser": "^5",
     "cdk8s": "^2.7.75",
     "cdk8s-cli": "^2.2.43",
-    "cdk8s-plus-24": "^2.8.1",
-    "constructs": "^10.2.33",
+    "cdk8s-plus-24": "^2.8.2",
+    "constructs": "^10.2.34",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.7",
     "eslint-import-resolver-typescript": "^3.5.5",
@@ -57,7 +57,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "yaml": "^2.3.0"
+    "yaml": "^2.3.1"
   },
   "engines": {
     "node": ">= 14.18.0"
