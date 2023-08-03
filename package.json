@@ -37,7 +37,7 @@
     "@cdk8s/projen-common": "^0.0.433",
     "@types/fs-extra": "^9.0.13",
     "@types/jest": "^28.1.8",
-    "@types/node": "^14",
+    "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
     "cdk8s": "^2.30.0",
@@ -62,7 +62,7 @@
     "yaml": "^2.3.1"
   },
   "engines": {
-    "node": ">= 14.18.0"
+    "node": ">= 16.20.0"
   },
   "main": "lib/index.js",
   "license": "Apache-2.0",
