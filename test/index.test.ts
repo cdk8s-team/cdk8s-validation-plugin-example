@@ -1,7 +1,8 @@
 import * as path from 'path';
 import * as cdk8s from 'cdk8s';
 import { ValidationContext } from 'cdk8s-cli/plugins';
-import * as kplus from 'cdk8s-plus-25';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import * as kplus from 'cdk8s-plus-28';
 import * as fs from 'fs-extra';
 import * as yaml from 'yaml';
 import { withTempDir } from './utils';

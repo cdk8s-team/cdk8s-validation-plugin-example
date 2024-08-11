@@ -1,5 +1,6 @@
 import * as cdk8s from 'cdk8s';
-import * as kplus from 'cdk8s-plus-25';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import * as kplus from 'cdk8s-plus-28';
 
 const app = new cdk8s.App();
 

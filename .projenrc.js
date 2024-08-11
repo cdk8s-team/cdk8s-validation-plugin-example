@@ -15,7 +15,7 @@ const project = new Cdk8sTeamTypeScriptProject({
 
     // used in integration tests to author a cdk8s application.
     'cdk8s',
-    'cdk8s-plus-25',
+    'cdk8s-plus-28',
     'constructs',
     'ts-node',
 
