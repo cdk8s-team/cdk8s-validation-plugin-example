@@ -47,12 +47,12 @@ async function synth(fixture: string) {
       // our project already declares these dependencies, so lets just
       // take them instead of installing new ones.
       const cdk8s = path.resolve(path.join(__dirname, '..', 'node_modules/.bin/cdk8s'));
-      const kplus = path.join(require.resolve('cdk8s-plus-25'), '..', '..');
+      const kplus = path.join(require.resolve('cdk8s-plus-28'), '..', '..');
       const k = path.join(require.resolve('cdk8s'), '..', '..');
 
-      // symlink cdk8s and cdk8s-plus-25 because our cdk8s app require it
+      // symlink cdk8s and cdk8s-plus-28 because our cdk8s app require it
       fs.mkdirpSync('node_modules');
-      child.execSync(`ln -s ${kplus} cdk8s-plus-25`, { cwd: path.join(dir, 'node_modules') });
+      child.execSync(`ln -s ${kplus} cdk8s-plus-28`, { cwd: path.join(dir, 'node_modules') });
       child.execSync(`ln -s ${k} cdk8s`, { cwd: path.join(dir, 'node_modules') });
 
       // populate the cdk8s plugins directory with our plugin
