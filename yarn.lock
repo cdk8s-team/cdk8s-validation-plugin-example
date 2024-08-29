@@ -1353,17 +1353,17 @@ cdk8s-cli@^2.198.202:
     yaml "2.5.0"
     yargs "^15"
 
-cdk8s-plus-28@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/cdk8s-plus-28/-/cdk8s-plus-28-2.5.1.tgz#c8e40ea2566bb296d7e45b71d66cc6da24164212"
-  integrity sha512-w2KheMxWsRTrwlEhFXrYkbW8ZCSnqzeTq52sSuNttTcSC7wHHjCgc3ZQUvZ4DnUKopRnq1RLbbChsOitya5m2g==
+cdk8s-plus-28@^2.5.1, cdk8s-plus-28@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/cdk8s-plus-28/-/cdk8s-plus-28-2.5.2.tgz#f1b43d86ef5538df99ca7475721af8cbff85e72c"
+  integrity sha512-Or1YAy/dgo4y8F3BZBpfzY6zgJNf8+tPqIXlR5PIYsLN2dtL639f9UfSkqifA1lPeyBf83lf9TmgSdSsrY5BSA==
   dependencies:
     minimatch "^3.1.2"
 
-cdk8s@^2.68.99:
-  version "2.68.99"
-  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.68.99.tgz#3c780f5b6a463b0c977d703b852df77d2a9d79e1"
-  integrity sha512-i4q9RISdLCFB8ZTfPnpAt4uOC7GSaPZfHORi6alyhXLoiTV1nTb4tRd46P0RF5gf/+IDFSc6Av8y6UITGvyD5A==
+cdk8s@^2.68.100, cdk8s@^2.68.99:
+  version "2.68.100"
+  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.68.100.tgz#9df9dbc7262a045fb5541c557c1383074a29eba6"
+  integrity sha512-jdoeuaofmqRDGMQ8Mju8MJSZQIVvzDM2bOnv9qRyAMtsR4pdC1rY0FEjXlJxYBCu/RsafR6xW3eh4dU+T2xpWA==
   dependencies:
     fast-json-patch "^3.1.1"
     follow-redirects "^1.15.6"
@@ -3485,7 +3485,7 @@ jsesc@^2.5.1:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
   integrity sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
 
-jsii-pacmak@^1.102.0, jsii-pacmak@^1.103.0:
+jsii-pacmak@^1.103.0:
   version "1.103.0"
   resolved "https://registry.yarnpkg.com/jsii-pacmak/-/jsii-pacmak-1.103.0.tgz#9fd384578e00f0a66cf99959e2cf2de004271bde"
   integrity sha512-UKHSky0Lt6v+effaK2e87ga0QC47/r1RS2V1tMhd0zIBjIB+8AV+Jq5fHwRTf1FFwr+Nrm7pzDn/UZyDBLGecw==
@@ -3515,13 +3515,13 @@ jsii-reflect@^1.103.0:
     oo-ascii-tree "^1.103.0"
     yargs "^16.2.0"
 
-jsii-rosetta@^5.4.32:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.5.1.tgz#83ff56bba8908be8133c17d4f234074b18ae5de5"
-  integrity sha512-7rLkwjtEKZ/lgxgu53XIx42KzadKosx+tajMPqNKvBGT21XhV9+pr60uBJ/aX+wJ85S49dlF3D0P3ujKK3jgwg==
+jsii-rosetta@^5.4.32, jsii-rosetta@^5.4.34:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.5.3.tgz#1aea3d2d47f8c055fb38ff0ab206250e47b24685"
+  integrity sha512-8WfBc3tMae/fY3n9jofApFA7UUT/y0XQd/ybSbqX+URsLQhOiain+uaJPkvA1dbDAwW2Gc7PaHxyKBD6TstJjQ==
   dependencies:
-    "@jsii/check-node" "1.102.0"
-    "@jsii/spec" "^1.102.0"
+    "@jsii/check-node" "1.103.0"
+    "@jsii/spec" "^1.103.0"
     "@xmldom/xmldom" "^0.8.10"
     chalk "^4"
     commonmark "^0.31.1"
@@ -3535,14 +3535,14 @@ jsii-rosetta@^5.4.32:
     yargs "^17.7.2"
 
 jsii-srcmak@^0.1.1227:
-  version "0.1.1227"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1227.tgz#aa4de91ad1629e9f8eeb7a9ec9795a91e6acf71f"
-  integrity sha512-q7nl1DfQBYStdOp24ze+Zm7nlwrlDTlNUxgpWCY8LaTbfTuu6LwCNgn2cSUjFOK0wnm2jIm1NYxW9hAoNPJwDw==
+  version "0.1.1228"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.1228.tgz#2c1178d16d3c20fe7b1500b29c6c74f208a3cdd7"
+  integrity sha512-KoXOYJq0yOTJoqAdguwFJ2HTbzNrhDSTqa1YAGlgbbT++kQD6BseLo61CsY3GjobPyAsblyIfTkwKZx7YX1Wxw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.5.1"
-    jsii-pacmak "^1.102.0"
-    jsii-rosetta "^5.4.32"
+    jsii-pacmak "^1.103.0"
+    jsii-rosetta "^5.4.34"
     ncp "^2.0.0"
     yargs "^17.7.2"
 
@@ -5128,9 +5128,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.7.0-dev.20240828"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.0-dev.20240828.tgz#32a4f1fb7d8a01c195a4d5b346ca157565185560"
-  integrity sha512-ErCxPl/V/LAmiULX17il/1qONClDF5dKH3A7ltOVj6Rsj+fSSXYiimnDAZShs7iFfMpo87oWv97hjkX7sG1edg==
+  version "5.7.0-dev.20240829"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.0-dev.20240829.tgz#504599e4c39500f39bc8414461706060dd9a33c9"
+  integrity sha512-F9kcFC/YWjYhecieA4GmXEu8IDrRtfONo3Pw61UZb9aQYDhbrfqpoz5ixfEt6O9rrSFvzdh1i0o1MRY2Bt/BLg==
 
 typescript@~5.5:
   version "5.5.4"
