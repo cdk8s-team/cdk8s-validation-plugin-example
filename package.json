@@ -41,7 +41,7 @@
     "@types/node": "16.18.78",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
-    "cdk8s": "^2.69.30",
+    "cdk8s": "^2.69.31",
     "cdk8s-cli": "^2.198.292",
     "cdk8s-plus-28": "^2.5.6",
     "commit-and-tag-version": "^12",
