@@ -51,8 +51,8 @@
     "eslint-plugin-import": "^2.31.0",
     "fs-extra": "^10.1.0",
     "jest": "^28.1.3",
-    "jest-junit": "^15",
-    "projen": "^0.91.5",
+    "jest-junit": "^16",
+    "projen": "^0.91.6",
     "ts-jest": "^28.0.8",
     "ts-node": "^10.9.2",
     "typescript": "^4.9.5"
