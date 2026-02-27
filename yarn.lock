@@ -901,9 +901,9 @@
   integrity sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==
 
 "@types/node@*":
-  version "25.3.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.3.1.tgz#82f3f6e30ac3b48560a092d9224a975b5c24e38d"
-  integrity sha512-hj9YIJimBCipHVfHKRMnvmHg+wfhKc0o4mTtXh9pKBjC8TLJzz0nzGmLi5UJsYAUgSvXFHgb0V2oY10DUFtImw==
+  version "25.3.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.3.2.tgz#cbc4b963e1b3503eb2bcf7c55bf48c95204918d1"
+  integrity sha512-RpV6r/ij22zRRdyBPcxDeKAzH43phWVKEjL2iksqo1Vz3CuBUrgmPpPhALKiRfU7OMCmeeO9vECBMsV0hMTG8Q==
   dependencies:
     undici-types "~7.18.0"
 
@@ -1573,10 +1573,10 @@ cdk8s-plus-28@^2.5.6:
   dependencies:
     minimatch "^3.1.2"
 
-cdk8s@^2.70.47, cdk8s@^2.70.48:
-  version "2.70.48"
-  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.70.48.tgz#1a74bb6c2dfa47c0259881a409e6b74fb4d09459"
-  integrity sha512-foytyGfgMy68YcLYoNrJWr9SuAWxobfGfNnE258J2rSo3MA4bbp/3slqdhRh53Jjruie4IEeHlXcXxZZrWWrDA==
+cdk8s@^2.70.47, cdk8s@^2.70.49:
+  version "2.70.49"
+  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.70.49.tgz#7d2fae1f8374db600bee9cf9c7a4e39c5636c0f6"
+  integrity sha512-EwXZmO9Su0Q1qIKwvSB40WWZZg88FXuEj/2CS/PwYiuu4mPelg8SPhmgsvvDooWDrh1+i01/yJOk6e1YIY+1lw==
   dependencies:
     fast-json-patch "^3.1.1"
     follow-redirects "^1.15.11"
