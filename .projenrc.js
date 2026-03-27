@@ -23,6 +23,9 @@ const project = new Cdk8sTeamTypeScriptProject({
     'fs-extra',
     '@types/fs-extra',
 
+    // tsx for running TypeScript fixtures under ESM on Node >= 22
+    'tsx',
+
     // projen utilities
     '@cdk8s/projen-common',
   ],
@@ -35,6 +38,13 @@ const project = new Cdk8sTeamTypeScriptProject({
 
 });
 
+// Override @types/node pinned by @cdk8s/projen-common to be compatible
+// with TypeScript 5.9, which introduced generic Uint8Array requiring
+// @types/node >= 22.
+const { DependencyType } = require('projen');
+project.deps.removeDependency('@types/node');
+project.deps.addDependency('@types/node@^22', DependencyType.BUILD);
+
 // the cdk8s-cli uses the "exports" directive in package.json
 // to restrict the modules that can be imported from it.
 // we need to add this config so that typescript detects it.
@@ -42,6 +52,8 @@ const project = new Cdk8sTeamTypeScriptProject({
 // see https://www.typescriptlang.org/docs/handbook/esm-node.html#packagejson-exports-imports-and-self-referencing
 project.tsconfig.compilerOptions.moduleResolution = 'nodenext';
 project.tsconfigDev.compilerOptions.moduleResolution = 'nodenext';
+project.tsconfig.compilerOptions.module = 'nodenext';
+project.tsconfigDev.compilerOptions.module = 'nodenext';
 
 project.gitignore.exclude('.vscode/');
 

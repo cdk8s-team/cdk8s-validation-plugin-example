@@ -70,7 +70,7 @@ async function synth(fixture: string) {
         env: {
           ...process.env,
 
-          // required so that 'ts-node' is available
+          // required so that 'tsx' is available
           PATH: `${path.join(__dirname, '..', 'node_modules', '.bin')}:${process.env.PATH}`,
 
           // tell cdk8s to use a custom plugins directory (which we pre-populated)
