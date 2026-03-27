@@ -1,12 +1,11 @@
 # this is the configuration file your users will have to write
 language: typescript
-app: ts-node main.ts
+app: tsx main.ts
 
 # the interesting part is this, where they define to use your
 # plugin as the validation.
 validations:
-
-    # the npm package name (required)
+  # the npm package name (required)
   - package: cdk8s-validation-plugin-example
 
     # the class the implements the plugin (required)

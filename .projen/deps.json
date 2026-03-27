@@ -19,7 +19,7 @@
     },
     {
       "name": "@types/node",
-      "version": "16.18.78",
+      "version": "^22",
       "type": "build"
     },
     {
@@ -93,7 +93,12 @@
       "type": "build"
     },
     {
+      "name": "tsx",
+      "type": "build"
+    },
+    {
       "name": "typescript",
+      "version": "~5.9",
       "type": "build"
     },
     {

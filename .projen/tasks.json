@@ -294,13 +294,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@18 --upgrade --target=minor --peer --no-deprecated --dep=dev --filter=@types/fs-extra,@types/jest,cdk8s,cdk8s-cli,cdk8s-plus-28,eslint-import-resolver-typescript,eslint-plugin-import,fs-extra,jest,ts-jest,ts-node"
+          "exec": "npx npm-check-updates@18 --upgrade --target=minor --peer --no-deprecated --dep=dev --filter=@types/fs-extra,@types/jest,cdk8s,cdk8s-cli,cdk8s-plus-28,eslint-import-resolver-typescript,eslint-plugin-import,fs-extra,jest,ts-jest,ts-node,tsx"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @stylistic/eslint-plugin @types/fs-extra @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdk8s cdk8s-cli cdk8s-plus-28 commit-and-tag-version constructs eslint-import-resolver-typescript eslint-plugin-import eslint fs-extra jest jest-junit ts-jest ts-node"
+          "exec": "yarn upgrade @stylistic/eslint-plugin @types/fs-extra @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdk8s cdk8s-cli cdk8s-plus-28 commit-and-tag-version constructs eslint-import-resolver-typescript eslint-plugin-import eslint fs-extra jest jest-junit ts-jest ts-node tsx"
         },
         {
           "exec": "npx projen"
