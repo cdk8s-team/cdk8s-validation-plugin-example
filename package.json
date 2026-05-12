@@ -59,7 +59,7 @@
     "typescript": "~5.9"
   },
   "dependencies": {
-    "yaml": "^2.8.4"
+    "yaml": "^2.9.0"
   },
   "engines": {
     "node": ">= 16.20.0"
