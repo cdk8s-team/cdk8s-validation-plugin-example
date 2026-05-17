@@ -42,7 +42,7 @@
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
     "cdk8s": "^2.70.64",
-    "cdk8s-cli": "^2.207.1",
+    "cdk8s-cli": "^2.207.2",
     "cdk8s-plus-28": "^2.5.6",
     "commit-and-tag-version": "^12",
     "constructs": "^10.0.0",
@@ -55,7 +55,7 @@
     "projen": "^0.99.61",
     "ts-jest": "^28.0.8",
     "ts-node": "^10.9.2",
-    "tsx": "^4.22.0",
+    "tsx": "^4.22.1",
     "typescript": "~5.9"
   },
   "dependencies": {
