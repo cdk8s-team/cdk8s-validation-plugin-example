@@ -1744,16 +1744,16 @@ cdk8s-plus-28@^2.5.6:
     minimatch "^3.1.2"
 
 cdk8s-plus-33@^2.5.38:
-  version "2.5.38"
-  resolved "https://registry.yarnpkg.com/cdk8s-plus-33/-/cdk8s-plus-33-2.5.38.tgz#9328e191dabd96db712c63dc94fc76f696c8fa2a"
-  integrity sha512-jjHVQ8xS4canMg1E3K7kcRofCzxuOfdYEWjeq5/uZB54rEU/gZxpkWJ+LQW72DI+Md34sBeNlPDcwl8Whh39nw==
+  version "2.5.39"
+  resolved "https://registry.yarnpkg.com/cdk8s-plus-33/-/cdk8s-plus-33-2.5.39.tgz#00bf3c46a9152b7d2aa781f22ae5e1986d79d783"
+  integrity sha512-lOZCWTtvwYq/UvOvOLVWNbnuWUmeRTjMTHoolYDKZAZa4c2V4R4bNFy80W7ZcQWYz8HzoNqLXLjhEVEomfwSgg==
   dependencies:
     minimatch "^9.0.9"
 
-cdk8s@^2.70.83:
-  version "2.70.83"
-  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.70.83.tgz#3a3a682140a546ca5fe30f003db1bf41e62fedcf"
-  integrity sha512-dZ3258xLeyQqhrkt55guRWrN65ym+rWznQtxJaaw+1NE8ZRgHkOnhh6qP51nLF3euFdNVmut2kSnoGVDBHuQsA==
+cdk8s@^2.70.83, cdk8s@^2.70.84:
+  version "2.70.84"
+  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.70.84.tgz#c96d9726755fb7af3fe51a2c6515c93eac1b2a0c"
+  integrity sha512-1BrD1lYCUu3jdX9a1iNkMoe2055C1Zjlh1rMrc6+HRD811ITndPpXniWGIcKZ8xJBSP1zs1h7L/+Q9wVAJ5q0Q==
   dependencies:
     fast-json-patch "^3.1.1"
     follow-redirects "^1.16.0"
@@ -2310,9 +2310,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.389:
-  version "1.5.392"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.392.tgz#31e9f9af0d8df3d1489468a4242b173605617482"
-  integrity sha512-1yQq3VQCZRwsnYc67Oc+1fge6Lwtn0hzi6zmEVkB61Zx21kTbwJAW4dFLadl5Rc1tKhG/kSpYXnfiAhu0f0a1g==
+  version "1.5.393"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.393.tgz#aec971df2a6f4f7e51fbacb200d66cebfc7d3c17"
+  integrity sha512-kiDJdIUawuEIcp9XoICKp1iTYDEbgguIPq526N1Q7jIQDeQ3CqoMx71025PI/7E48Ddtw2HuWsVjY7afEgNxmg==
 
 emittery@^0.10.2:
   version "0.10.2"
