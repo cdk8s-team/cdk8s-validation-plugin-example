@@ -56,7 +56,7 @@
     "projen": "^0.101.28",
     "ts-jest": "^28.0.8",
     "ts-node": "^10.9.2",
-    "tsx": "^4.23.10",
+    "tsx": "^4.23.11",
     "typescript": "~5.9"
   },
   "dependencies": {
